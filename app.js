@@ -114,7 +114,7 @@ if (user == "guest") {
 } else if (user == "employee") {
     console.log("Succesfully logged in")
 }*/
-
+/*
 let myName = "Kevin"
 
 let myNameLength = myName.length
@@ -125,4 +125,86 @@ if (myNameLength > 5) {
     alert("Exactly 5 letters");
 } else {
     alert("Less than 5 letters");
+}*/
+/*let message = 1 > 10 ? "condition is TRUE" : "condition is FALSE";
+console.log(message);
+
+let time = "12:00"
+
+let clock = (time <= "12:00") ? "Good Morning" : "Good Afternoon";
+console.log(clock);
+*/
+/*let rolldice = Math.floor((Math.random()) * 6) + 1
+
+switch(rolldice) {
+    case 1 : 
+        console.log("You rolled a 1!")
+        break
+    case 2 :
+        console.log("You rolled a 2!")
+        break
+    case 3 : 
+        console.log("You rolled a 3!")
+        break
+    case 4 : 
+        console.log("You rolled a 4!")
+        break
+    case 5 :
+        console.log("You rolled a 5!")
+        break
+    case 6 :
+        console.log("You rolled a 6!")
+        break
+}
+ let favFood = "Pizza"
+
+ switch(favFood) {
+    case "Sushi" : 
+        console.log(`That's right ${favFood} is my favorite type of food!`)
+        break
+    case "Pasta" :
+        console.log(`That's right ${favFood} is my favorite type of food!`)
+        break
+    case "Ramen" : 
+        console.log(`That's right ${favFood} is my favorite type of food!`)
+        break
+    case "Hot Dog" :
+        console.log(`That's right ${favFood} is my favorite type of food!`)
+        break
+    case "Pizza" :
+        console.log(`That's right ${favFood} is my favorite type of food!`)
+        break
+    default :
+        console.log(`${favFood} not found... I'm hungry!`)
+ }*/
+
+//11B.Exercices conditionals
+
+/*const intro = prompt('What is your name? ')
+const animal = prompt('Do you prefer cats or dogs?', 'cat or dog')
+
+if (animal === "cat") {
+    console.log(`Hello, ${intro}! Hope you will find it's purrrrfect over here!`)
+} else if (animal === "dog") {
+    console.log(`Hello, ${intro}! We also like good boys over here!`)
+} else {
+    console.log(`Howdy ${intro}! We don't dislike ${animal}s, but whatever floats your boat!`)
+}
+*/
+/*const mystery = "Pa7rickStarfish"; //CHANGE THIS VALUE TO MAKE THE CONDITIONAL BELOW TRUE
+
+// LEAVE THIS CODE ALONE! (pretty please)
+if (mystery[0] === "P" && mystery.length > 5 && mystery.indexOf("7") !== -1) {
+  console.log("YOU GOT IT!!!");
+} else {
+  console.log("TRY AGAIN");
+}*/
+let age=prompt("Hello, how old are you?")
+
+if (age<18) {
+    alert("Sorry, you are too young to drive this car. Powering off");
+} else if (age>18) {
+    alert("Powering On. Enjoy the ride!");
+} else {
+    alert("Congratulations on your first year of driving. Enjoy the ride!");
 }
