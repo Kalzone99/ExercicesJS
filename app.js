@@ -106,8 +106,23 @@ alert(`${firstNumber} + ${secondNumber} = ${addition}\n${firstNumber} - ${second
 */
 
 
+//conditionals
+/*let user = "employee"
 
+if (user == "guest") {
+    console.log("Login denied")
+} else if (user == "employee") {
+    console.log("Succesfully logged in")
+}*/
 
+let myName = "Kevin"
 
+let myNameLength = myName.length
 
-
+if (myNameLength > 5) {
+    alert("More than 5 letters");
+} else if (myNameLength === 5) {
+    alert("Exactly 5 letters");
+} else {
+    alert("Less than 5 letters");
+}
