@@ -199,7 +199,7 @@ if (mystery[0] === "P" && mystery.length > 5 && mystery.indexOf("7") !== -1) {
 } else {
   console.log("TRY AGAIN");
 }*/
-let age=prompt("Hello, how old are you?")
+/*let age=prompt("Hello, how old are you?")
 
 if (age<18) {
     alert("Sorry, you are too young to drive this car. Powering off");
@@ -208,3 +208,75 @@ if (age<18) {
 } else {
     alert("Congratulations on your first year of driving. Enjoy the ride!");
 }
+*/
+/*let fruit=prompt("Hello, what is your favorite fruit?", "banana, strawberry, grape ?").toLowerCase()
+
+if (fruit === "banana") {
+    alert("I like bananas too, and i can not lie");
+} else if (fruit === "strawberry") {
+    alert("I LOVE strawberries, j'adore li fraises");
+} else if (fruit === "grape") {
+    let color = prompt("Do you prefer purple or green grapes?", "purple or green?").toLowerCase()
+
+    if (color === "purple"){
+            alert("I don't like purple grapes");
+        } else if (color === "green") {
+            alert("Green grapes are okay, i guess");
+        } else {
+            alert("I do not understand");
+        }
+} else {
+    alert("I do not understand the word you just said :(")
+}   
+*/
+//Arrays
+/*let countries = ["Belgium", "Canada", "Denmark"]
+
+countries[3] = "Egypt"
+console.log(countries)
+
+let colours = ["Blue", "Red", "Yellow", ["Green", "Orange", "Purple" ]]
+    
+console.log(colours[3][2])
+*/
+/*let fruits = ["Apple", "Orange", "Banana"]
+fruits.unshift("Cherry", "Pineapple")
+console.log(fruits)
+fruits.push("Plum", "Grapes")
+console.log(fruits)
+console.log(fruits.indexOf("Orange"))
+fruits.splice(3, 1, "Lemon")
+console.log(fruits)
+fruits.sort()
+console.log(fruits)*/
+//12B Exercices
+const leaderboard = ["Harry", "Lua", "Hermione", "Bellatrix"]; //DON'T TOUCH THIS LINE!
+
+// YOUR CODE BELOW HERE:
+/*leaderboard.splice( 1, 1, "Luna")
+console.log(leaderboard)
+leaderboard.splice( 3, 1, "Draco")
+console.log(leaderboard)
+*/
+/*const initialArray = [null, true, ["Apple", "two", undefined], false, ["three", "BeCode"], 4, "I am a big bad wolf", ["one"] ];
+let flattenArray = initialArray.flat(1)
+
+let splicedArray = flattenArray.splice(0, 3 ,"one")
+
+let splicedArray2 = flattenArray.splice(2, 2)
+
+let finalArray = flattenArray.slice(0,3)
+console.log(finalArray)*/
+
+const planets = ["The Moon", "Venus", "Earth", "Mars", "Jupiter"]; //DO NOT TOUCH THIS LINE!
+
+// YOUR CODE GOES BELOW THIS LINE:
+/*let shiftPlanets = planets.shift()//.push("Saturn").unshift("Mercury")
+let pushPlanets = planets.push("Saturn")
+let unshiftPlanet = planets.unshift("Mercury")*/
+planets.shift() ; planets.push("Saturn") ; planets.unshift ("Mercury");
+console.log(planets)
+
+
+
+
