@@ -250,23 +250,29 @@ console.log(fruits)
 fruits.sort()
 console.log(fruits)*/
 //12B Exercices
-const leaderboard = ["Harry", "Lua", "Hermione", "Bellatrix"]; //DON'T TOUCH THIS LINE!
+//const leaderboard = ["Harry", "Lua", "Hermione", "Bellatrix"]; //DON'T TOUCH THIS LINE!
 
 // YOUR CODE BELOW HERE:
-/*leaderboard.splice( 1, 1, "Luna")
+/*Don't do even tho it's correct
+leaderboard.splice( 1, 1, "Luna")
 console.log(leaderboard)
 leaderboard.splice( 3, 1, "Draco")
 console.log(leaderboard)
 */
-/*const initialArray = [null, true, ["Apple", "two", undefined], false, ["three", "BeCode"], 4, "I am a big bad wolf", ["one"] ];
+/*BETTER DO
+leaderboard.splice(1, 1, "Luna"); leaderboard.splice( 3, 1, "Draco") 
+console.log(leaderboard)
+*/
+//const initialArray = [null, true, ["Apple", "two", undefined], false, ["three", "BeCode"], 4, "I am a big bad wolf", ["one"] ];
+/*Don't
 let flattenArray = initialArray.flat(1)
-
 let splicedArray = flattenArray.splice(0, 3 ,"one")
-
 let splicedArray2 = flattenArray.splice(2, 2)
-
 let finalArray = flattenArray.slice(0,3)
 console.log(finalArray)*/
+/*BUT DO :*/
+/*let finalArray = initialArray.flat(1); finalArray.splice( 0, 3, "One"); finalArray.splice( 2, 2); finalArray.splice( 3, 5)
+console.log(finalArray)
 
 const planets = ["The Moon", "Venus", "Earth", "Mars", "Jupiter"]; //DO NOT TOUCH THIS LINE!
 
@@ -274,9 +280,80 @@ const planets = ["The Moon", "Venus", "Earth", "Mars", "Jupiter"]; //DO NOT TOUC
 /*let shiftPlanets = planets.shift()//.push("Saturn").unshift("Mercury")
 let pushPlanets = planets.push("Saturn")
 let unshiftPlanet = planets.unshift("Mercury")*/
-planets.shift() ; planets.push("Saturn") ; planets.unshift ("Mercury");
-console.log(planets)
+/*planets.shift() ; planets.push("Saturn") ; planets.unshift ("Mercury");
+console.log(planets)*/
 
+//Objects - nice
+/*const product = {
+    name: "Iphone5",
+    inStock: true,
+    price: 1249.90,
+    includedInPackage: [
+        {
+            gadget1: "Case",
+            gadget2: "Earphones",
+            gadget3: "Charger",
+        },
+    ],
+};
+console.log(product.includedInPackage[0].gadget2)
 
+//PLEASE DON'T TOUCH THIS LINE!
+const restaurant = {
+    name: "Ichiran Ramen",
+    address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+    city: "Brooklyn",
+    state: "NY",
+    zipcode: "11206",
+  };
+  
+  //YOUR CODE GOES DOWN HERE:
+  let fullAddress = `${restaurant.address}, ${restaurant.city}, ${restaurant.state} ${restaurant.zipcode}`
+console.log(fullAddress)
 
+const movie = {
+    title: "Braveheart",
+    year: 1995,
+    director: "Mel Gipson",
+    genre: ["action", "drama"],
+    rating: 92,
+  };
+  
+  console.log(movie.rating); // Prints 92
+  
+  movie.rating = 97;
+  
+  console.log(movie.rating); // Prints 97
+  movie.popcorn = "salty";
+  console.log(movie);
+*/
 
+//For Loops
+/* iterrate from 1 to 10
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
+*/
+/*for (let i=2; i<=20 && i%2 == 0; i+=2){
+    console.log(i);
+}
+for (let i=1; i<=20 && i%2 == 1; i+=2){
+    console.log(i);
+}
+for (let i=100; i !== 0 && i % 10 == 0 ; i -= 10){
+    console.log(i);
+}
+for (let i = 25; i !== 0 && i % 5 == 0 ; i -= 5){
+    console.log(i);
+}
+for (let i = 10 ; i <= 1000 ; i *= 10){
+    console.log(i);
+}*/
+
+const colors = ["blue", "red", "violet", "yellow"];
+for (let i = 0; i <= colors.length - 1; i++) {
+    console.log(colors[i]);
+  }
+  for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
+  }
