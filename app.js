@@ -155,7 +155,7 @@ switch(rolldice) {
     case 6 :
         console.log("You rolled a 6!")
         break
-}
+}/*
  let favFood = "Pizza"
 
  switch(favFood) {
@@ -349,11 +349,279 @@ for (let i = 25; i !== 0 && i % 5 == 0 ; i -= 5){
 for (let i = 10 ; i <= 1000 ; i *= 10){
     console.log(i);
 }*/
-
+/*Example going through an array !!
 const colors = ["blue", "red", "violet", "yellow"];
 for (let i = 0; i <= colors.length - 1; i++) {
     console.log(colors[i]);
   }
   for (let i = 0; i < colors.length; i++) {
     console.log(colors[i]);
+  }*/
+
+ /*   const animals = ["lion", "pangolim", "zebra", "dog", "cat", "bird"];
+
+for (let i = animals.length -1  ; i >= 0 ; i--) {
+    console.log(animals[i]);
+}*/
+
+/*const users = [
+    {
+      firstName: "Vito",
+      lastName: "Corleone",
+    },
+    {
+      firstName: "William",
+      lastName: "Wallace",
+    },
+    {
+      firstName: "Harry",
+      lastName: "Potter",
+    },
+    {
+      firstName: "Amadeus",
+      lastName: "Mozart",
+    },
+    {
+      firstName: "Barack",
+      lastName: "Obama",
+    },
+  ];
+
+  for (let i = 0 ; i <= users.length -1 ; i++)
+
+ console.log(`${i+1}. My full name is ${users[i].firstName} ${users[i].lastName}`);
+*/
+
+/*const seatingChart = [
+    ["Colas", "Benoit", "Elodie"],
+    ["Sola", "Irina", "Antonino", "Eli"],
+    ["John", "Maryna", "Naike", "Fabrice"],
+  ];
+  
+  // I can use nested loops to do that :
+  
+  for (let i = 0; i < seatingChart.length; i++) {
+    const row = seatingChart[i]; // I created a variable "row" just to be cleaner in the declaration of the next loop. You could put seatingChart[i].length, it would be the same thing
+    for (let j = 0; j < row.length; j++) {
+      console.log(row[j]);
+    }
   }
+*/
+
+
+/*const seatingChart = [
+    ["Colas", "Benoit", "Elodie"],
+    ["Sola", "Irina", "Antonino", "Eli"],
+    ["John", "Maryna", "Naike", "Fabrice"],
+  ];
+  
+  // I can use nested loops to do that :
+  
+  for (let i = 0; i < seatingChart.length; i++) {
+    console.log(`ROW #${i+1}`)
+    const row = seatingChart[i]; // I created a variable "row" just to be cleaner in the declaration of the next loop. You could put seatingChart[i].length, it would be the same thing
+    for (let j = 0; j < row.length; j++) {
+      console.log(row[j]);
+    }
+  }
+*/
+
+//17. While loops  !
+
+/*let num = 0;
+
+while (num < 10) {
+  console.log(num);
+  num++;
+}*/
+
+/*let num = 0
+
+while (num  <= 100) {
+    console.log(`The speed of the car is ${num}MPH`)
+    num = num+10;
+}
+
+let a= 1
+let b= 10
+
+do {
+    console.log(`The number is ${a}`)
+    a++
+} while (a <= b)
+ */
+
+ //18.Exercices while loop
+//The machine will now ask you to pick a random number 
+/* var question;
+ //The machine checks if the input is correct
+while (isNaN(parseInt(question = prompt("Enter a max number: "))))
+{
+   console.log("Input is not a number");
+   alert("Please try again");   
+}
+//The machine will now choose a number between 1 and the max number that has been input
+let random = Math.floor((Math.random()) * question)+1 
+//The machine will ask to guess a number 
+let playGame;
+while (isNaN(parseInt(playGame = prompt(`Guess a number between 1 and the max number(${question}): `))))
+{
+    console.log("Input is not a number")
+    alert("Please try again")
+}
+//initiate guess counter
+let guess = 1
+//Guessing game and counter loop
+while (playGame != random){
+            if (playGame < random) {
+        alert(`The number you are looking for is ... greater than that(between ${playGame} and ${question})`)
+        guess += 1;
+        playGame = prompt(`Guess higher(${playGame}): `)
+            } else if (playGame > random) {
+        alert(`The number you are looking for is ... smaller than that(between ${playGame} and 1)`) 
+        guess += 1;
+        playGame = prompt(`Guess lower(${playGame}): `)
+        }  
+}
+//Winning message in all its glory
+      alert(`Hot Dog! We have a wiener !!! Congratulations ${random} was the number we were looking for and it took you ${guess} attempts!!`)
+console.log(guess)
+*/
+
+//19. For ... of and For ... in
+/*
+const colors = ["red", "orange", "blue", "violet"];
+
+// For loop example
+
+for (let i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+
+// For... of example
+
+for (let x of colors) {
+  console.log(x);
+}
+
+// For both, the result will be
+
+/*
+
+"red"
+"orange"
+"blue"
+"violet"
+
+/*
+const user = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+  hobbies: ["football", "movies", "guitar"],
+};
+
+for (let key in user) {
+  console.log(key);
+}
+for (let key in user) {
+    console.log(`${key} : ${user[key]}`);
+  }
+  
+  // Result :
+  
+  
+  firstName : John
+  lastName : Doe
+  age : 30
+  hobbies : ["football", "movies", "guitar"]
+  */
+// 20 To Do list
+//first create an empty array
+/*let toDoList = [];
+
+let command = "";
+while (command !== "quit") {
+    // Command prompt
+    command = prompt("Input command: (new, list, delete, quit)").toLowerCase();
+
+    // New command
+    if (command === "new") {
+        let newPrompt = prompt("What will be your new To Do: ?");
+        if (newPrompt) {
+            toDoList.push(newPrompt);
+            alert(`Added "${newPrompt}" to the To Do list!`);
+        } else {
+            alert("No new To Do entered...");
+        }
+
+    // Listing all the To Dos in the list
+    } else if (command === "list") {
+        console.log("\n********* TODO LIST *********\n");
+        if (toDoList.length === 0) {
+            console.log("No to-dos entered yet...");
+        } else {
+            for (let i = 0; i < toDoList.length; i++) {
+                console.log(`${i + 1}. ${toDoList[i]}`);
+            }
+        }
+
+    // Delete a given to-do if it exists
+    } else if (command === "delete") {
+        if (toDoList.length === 0) {
+            alert("There is nothing to delete");
+        } else {
+            console.log("\nHere are your To Dos:");
+            for (let i = 0; i < toDoList.length; i++) {
+                console.log(`${i + 1}. ${toDoList[i]}`);
+            }
+            
+            let numberOfDelete = parseInt(prompt("Enter the number of the To Do you want to delete: "));
+            let index = numberOfDelete - 1;
+
+            if (index >= 0 && index < toDoList.length) {
+                let deleted = toDoList.splice(index, 1);
+                alert(`You have deleted: "${deleted[0]}`);
+            } else {
+                alert("Not a valid number");
+            }
+        }
+
+    // Quit command
+    } else if (command === "quit") {
+        alert("Bye bye!");
+
+    // Invalid command
+    } else {
+        alert("Invalid command, please try again");
+    }
+}*/
+
+//21.Functions
+
+/*function sing (){
+    console.log("DO");
+    console.log("RE");
+    console.log("MI");
+    console.log("FA");
+    console.log("SOL");
+    console.log("LA");
+    console.log("SI");
+}
+sing()*/
+
+/*function myName() {
+    console.log("Kevin");
+}
+myName();
+myName();
+myName();
+*/
+let colours = function() {
+    console.log("Red, Green, Blue");
+}
+colours();
+
+let myColours = colours;
+
+myColours();
