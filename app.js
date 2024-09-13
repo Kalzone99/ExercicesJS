@@ -990,3 +990,54 @@ console.log(multiplication());*/
 
 console.log(multiplication(3, 5));  // This will log 15
 console.log(multiplication());      // This will log 3 (1 * 3)*/
+
+//Destructuring *very important*
+/*
+const myObject = {
+    firstName: "William",
+    lastName: "Wallace",
+    age: 37,
+    profession: "warrior",
+  };
+  //Don't do this : 
+const firstName = myObject.firstName;
+  const lastName = myObject.lastName;
+  const age = myObject.age; 
+
+  //Do this the destructuring part
+  const { firstName, lastName, age, profession } = myObject;
+
+  // Then :
+  
+  console.log(firstName);
+  console.log(lastName);
+  console.log(age);
+  console.log(profession);*/
+
+  //SetTimeout()
+ /* console.log("Hello!");
+
+  setTimeout(() => {
+    console.log("I've been logged 2 seconds after the first log");
+  }, 2000);*/
+ // setInterval()
+ /*const timer = setInterval(() => {
+    console.log("hello");
+  }, 2000);
+  
+  clearInterval(timer);*/
+
+//Dates 
+
+/*let date = new Date() 
+console.log(date.getDate());
+
+let hour = date.getHours();
+let minute = date.getMinutes();
+console.log(`${hour}: ${minute}`);
+let day = date.toLocaleString('default', {weekday: 'long'});
+console.log(day);*/
+
+//The End 
+
+
