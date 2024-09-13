@@ -926,7 +926,7 @@ greeting()*/
         });
     }
 }*/
-
+/*
 let book = {
     title: "The fellowship of the Ring",
     related: ["The Two Towers, The Return Of The King"],
@@ -937,4 +937,56 @@ let book = {
         });
     },
 }
-book.showRelated();
+book.showRelated();*/
+//26 Array methods pt2 
+//god dammit .forEach() where were you earlier?
+//
+/* Super interresting sorting method
+const numbTest = [ 1, 44, 87, 65, 9, 32, 2, 8, 76]
+numbTest.sort(( a, b) => {return a - b})
+console.log(numbTest)
+*/
+/*Array.from !!!
+change en array à partir d'autre chose 
+MAIS! : */
+//créons un string de nombres à changer en array de nombres
+/*const str = "12345"
+const numArray1 = Array.from(str);
+console.log(numArray1)
+//nous donne un array de != strings ['1', '2', '3', '4', '5']
+//Pour créer un array de nombres:
+const numArray2 = Array.from(str, (x) => Number(x))
+console.log(numArray2);*/
+//nous donne un array de nombres [1, 2, 3, 4 , 5]
+/*
+const somethingToTransfigure = {
+    0: 'ab',
+    1: 'cd',
+    2: 'ef',
+    length: 4, //If not present gives an empty array?!  if length > than indexes gives an undefined 
+};
+const abracadabra = Array.from(somethingToTransfigure);
+console.log(abracadabra);*/
+
+//27 Misc.
+/*console.log(hello);
+console.log("End of program");*/
+/*
+try {
+    console.log(hello);
+} catch {
+    console.log("The above code didn't work");
+
+}
+console.log("End of program");*/
+//Issue with Typescript and Javascript here
+//Doesn't work like this (gives an unexpected : token error):
+/*const multiplication = (num1: 1, num2: 3) => num1 * num2;
+
+console.log(multiplication(3, 5));
+console.log(multiplication());*/
+// works here : 
+/*const multiplication = (num1 = 1, num2 = 3) => num1 * num2;
+
+console.log(multiplication(3, 5));  // This will log 15
+console.log(multiplication());      // This will log 3 (1 * 3)*/
