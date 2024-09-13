@@ -616,7 +616,7 @@ sing()*/
 myName();
 myName();
 myName();
-*/
+
 let colours = function() {
     console.log("Red, Green, Blue");
 }
@@ -625,3 +625,316 @@ colours();
 let myColours = colours;
 
 myColours();
+
+function favFood(response) {
+    if (response === undefined) {
+        console.log("Please, enter your favorite food: ")
+    } else {
+        console.log(`Your favorite food is ${response}`);
+    }
+}
+favFood("pizza");
+*/
+/*function favNum(num){
+    return (num);
+}
+console.log(`My fav number is: ${favNum()}`);
+let favNum = function(num) {
+    return (num);
+}
+console.log(`My fav number is: ${favNum(21)}`);*/
+
+//21B Exercices
+
+/*function roll(faces, times){
+    
+    for (let i=1 ; i <= times; i++){
+            let result = Math.floor((Math.random()) * faces + 1)
+            console.log(`Die ${i}: ${result}`);
+    }
+}
+roll(6,3);*/
+/*
+repeat("$", 5);
+// expected result : "$$$$$"
+
+function repeat (toMultiply, times) {
+    
+    toMultiply = String(toMultiply)
+    if (typeof times === "number") {
+        console.log(`${toMultiply.repeat(times)}`);
+    } else if (typeof times !== "number" || times === undefined) {
+        console.log("The second parameter is not a number, try again");
+    }
+}
+repeat("g", 56)*/
+/*
+greet("Marlon", "Brandon");
+
+// expected result : "This is Marlon B."*/
+/*function greet(firstName, lastName) {
+
+    firstName = String(firstName);
+    lastName = String(lastName);
+    
+    let lastNameToArray = lastName.split('');
+    console.log(`This is ${firstName} ${lastNameToArray[0]}.`)
+}
+greet ("Kevin", "Selvais")*/
+
+/*const myVariable = sum(3, 6);
+console.log(myVariable);
+
+// Expected result : 9*/
+/*function sum(num1, num2) {
+    if (typeof num1 === "number" && typeof num2 === "number") {
+        console.log(num1 + num2);
+    } else if (typeof num1 !== "number" || num1 === undefined || typeof num2 !== "number" || num2 === undefined) {
+        console.log("one or the two parameter(s) is/are incorrect, try again");
+    }
+    
+}
+const mySum = sum(3, 6)
+console.log(mySum);
+
+sum(3,6)
+// to get the variable to work do not set the parameters whitin the parenthesis like this =>
+let mySumBis = sum;
+sum(3,6)*/
+
+//Mental Exercice
+/*function logs() {
+    console.log("Hello");
+    console.log("World");
+    return 4;
+    console.log("Goodbye");
+    console.log("World");
+  }
+  //This next line CALLS the function so the 2 logs "Hello" and "World" will log returning the 4 
+  //after that the last 2 logs will not execute (return exits the fct) 
+const myVariable = logs();
+  //This next line will log what the function returned, the 4 and not the 2 logs "Hello" and "World"
+console.log(myVariable);*/
+
+//is Short weather or not?
+/*isShortWeather(13); // false
+isShortWeather(27); // true
+isShortWeather(-7); // false*/
+/*function isShortWeather(temp) {
+    temp = parseInt(temp);
+    if (temp < 24) {
+        console.log(false);
+    } else {
+        console.log(true);
+        
+    }
+    
+}
+
+isShortWeather(24)
+*/
+// last element of an array
+/*lastElement([3, 5, 7]); //7
+lastElement([1]); //1
+lastElement([]); //null*/
+/*function lastElement(singleArray) {
+   let lastIndex = (singleArray.length - 1)
+   if (lastIndex < 0){
+    console.log("null")
+   } else {
+   console.log(singleArray[lastIndex])
+   }
+}
+lastElement([1])*/
+
+//capitalize
+/*function capitalize(inputString) {
+    //charAt(0).toUpperCase() will only return the first letter capitalized + slice at 1 index gives the rest of the string
+    let capitalFirst = inputString.charAt(0).toUpperCase() + inputString.slice(1); 
+    console.log(capitalFirst)
+}
+capitalize("kevin")*/
+
+//Sum array
+/*
+function sumArray(singleArray) {
+    let total = 0
+    for (let i = 0 ; i < singleArray.length ; i++) {
+        total = total + singleArray[i]
+    }
+    console.log(total)
+}
+sumArray([1,2,3,4,5,6,7,8,9])*/
+
+//return Day
+/*
+function returnDay(numberChoice){
+const week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+if (numberChoice < 1 || numberChoice > 7 || isNaN(numberChoice) || typeof numberChoice === "boolean"){
+    console.log("null")
+} else {
+    console.log(`${week[numberChoice - 1]}`);
+}
+}
+returnDay(1);*/
+
+//22 Scope
+
+/*const i = "Hello World";
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+console.log(i);
+const hello = "Hello";
+
+function myFunc() {
+  const hello = "something else";
+  console.log(hello);
+}
+
+myFunc();
+
+for (let hello = 0; hello < 3; hello++) {
+  console.log(hello);
+}
+
+console.log(hello);*/
+/*let animal = "dog";
+
+function animalWatch() { //declared but never read!!!
+  let animal = "cat";
+}
+
+animalWatch();
+console.log(animal);*/
+/*let animal = "dog";
+
+function animalWatch() {
+  animal = "cat"; // reassigned "cat" to variable dog so it works outside not like a variable in local scope/block
+}
+
+animalWatch();
+console.log(animal);*/
+// Amit tasks
+//1
+
+/*
+function call() {
+    let firstName = "Kevin" ; 
+    let lastName = "Selvais";
+    let age = 44;
+    let country = "Belgium";
+    console.log(`${firstName} ${lastName} is ${age} years old and lives in ${country}`);
+}
+call()
+ let firstName = "James";
+call();
+
+let game = 'Sonic'
+if (true) {
+    let game = 'Mario';
+    console.log(game);
+}
+
+console.log(game);*/
+//2
+/*book("Dune");
+
+function book(title){
+    console.log(`The book is called ${title}`);
+}
+*/
+//23. Javascript Function expressions  // Higher order functions 
+/*const callTwice = function (func) {
+    func();
+    func();
+  };
+  
+  // Here, the callTwice function takes another function as a parameter and call it two times
+  
+  const rollDie = function () {
+    const roll = Math.floor(Math.random() * 6 + 1);
+    console.log(roll);
+  };
+  
+  callTwice(rollDie);*/
+/*const callXTimes = function(func, numberInput){
+    console.log(`Throwing ${numberInput} times the die ...`)
+    // or for (let i=1 ; i <= numberInput ; i++) tant que i n'est pas le même nombre en gros le suivant fonctionne comme l'index => juste inférieur au numéro car on commence de zéro
+    for (let i=0; i < numberInput ; i++) {        
+            func();
+        } 
+}
+ 
+const rollDie = function () {
+    const roll = Math.floor(Math.random() * 6 + 1);
+    console.log(roll);
+};
+callXTimes(rollDie, 9);
+*/
+//24. Methods
+/*
+Little exercise :
+
+Create an object called user;
+Give him a fistName, a lastName and age;
+Give him a method printAge and aYearHasPast
+aYearHasPast should add 1 to the age property.
+printAge should console.log (firstName) (lastName) is (age) years old
+Play in your console to print his age and then increment his age.
+*/
+/*
+const user ={
+    firstName: "Wayne",
+    lastName: "Gretzky",
+    age: 63,
+    printAge: function() {
+        console.log(`${this.firstName} ${this.lastName} is ${this.age} years old`)
+    },
+    aYearHasPast: function() {
+        this.age += 1
+    }
+}
+console.log(user);
+console.log(user.age);
+user.printAge();
+user.aYearHasPast();
+console.log(user.age);
+*/
+// Amit tasks
+/*function user(name) {
+    return `My name is ${name}`
+}
+console.log(user("Kevin"))
+const user2 = name2 => `My name is ${name2}`
+console.log(user2("Bob"));*/
+/*const greeting = function() {
+    console.log(`Hello!, how are you?`)
+}
+greeting()
+const greeting = () => console.log(`Hello! how are you?`);
+greeting()*/
+
+/*let book = {
+    title: "The fellowship of the Ring",
+    related: function() {
+        this.related.forEach(function (relatedBooks) {
+            console.log(`Title: ${this.title}`);
+            console.log(`Related books: ${relatedBooks}`);
+        });
+    }
+}*/
+
+let book = {
+    title: "The fellowship of the Ring",
+    related: ["The Two Towers, The Return Of The King"],
+    showRelated: function() {
+        this.related.forEach((relatedBooks) => {
+            console.log(`Title: ${this.title}`);
+            console.log(`Related books: ${relatedBooks}`);
+        });
+    },
+}
+book.showRelated();
